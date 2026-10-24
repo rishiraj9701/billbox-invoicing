@@ -3,7 +3,7 @@ import React from 'react';
 export const Logos: React.FC = () => {
   return (
     <section className="logos" aria-label="Our customers">
-      <p>From bakeries to software companies: they already invoice with Billcircle</p>
+      <p>From bakeries to software companies: they already invoice with Billbox</p>
       <div className="marquee">
         <div className="marquee-track">
           <span className="logo">

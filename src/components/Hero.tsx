@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
             <span className="dim">We handle <span className="nw">the tax authority.</span></span>
           </h1>
           <p className="hero-sub" data-fade>
-            Billcircle is online invoicing for freelancers, LLCs and partnerships. You issue the invoice, we submit it to the tax authority, and we match the payment to your bank account.
+            Billbox is online invoicing for freelancers, LLCs and partnerships. You issue the invoice, we submit it to the tax authority, and we match the payment to your bank account.
           </p>
           <div className="hero-ctas" data-fade>
             <a href="#arak" className="btn btn-accent">
@@ -89,14 +89,14 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          <div className="mock" role="img" aria-label="The Billcircle invoice editor: customer, items, total and tax authority submission status">
+          <div className="mock" role="img" aria-label="The Billbox invoice editor: customer, items, total and tax authority submission status">
             <div className="mock-bar">
               <i></i><i></i><i></i>
-              <span className="mock-url"><svg><use href="#i-lock" /></svg>app.billcircle.com/invoices/new</span>
+              <span className="mock-url"><svg><use href="#i-lock" /></svg>app.billbox.com/invoices/new</span>
             </div>
             <div className="mock-body">
               <aside className="side">
-                <div className="brand"><svg className="brand-mark"><use href="#logo" /></svg>Billcircle</div>
+                <div className="brand"><svg className="brand-mark"><use href="#logo" /></svg>Billbox</div>
                 <ul>
                   <li><svg><use href="#i-home" /></svg>Overview</li>
                   <li className="on"><svg><use href="#i-file" /></svg>Invoices<span className="cnt">148</span></li>

@@ -7,16 +7,16 @@ interface FaqItem {
 
 const faqData: FaqItem[] = [
   {
-    question: "Does Billcircle meet the tax authority's requirements?",
-    answer: "Yes. Billcircle communicates with the tax authority's online invoice system (API 3.0) and submits invoices automatically the moment they're issued. Our software is registered with the tax authority, and we track every regulatory change at no extra charge.",
+    question: "Does Billbox meet the tax authority's requirements?",
+    answer: "Yes. Billbox communicates with the tax authority's online invoice system (API 3.0) and submits invoices automatically the moment they're issued. Our software is registered with the tax authority, and we track every regulatory change at no extra charge.",
   },
   {
     question: "What is a technical user and how do I set it up?",
-    answer: "With a technical user, Billcircle can submit invoices to the tax authority on your behalf. It has to be created in the Online Invoice portal. After sign-up we walk you through it with screenshots, and it usually takes 3-4 minutes.",
+    answer: "With a technical user, Billbox can submit invoices to the tax authority on your behalf. It has to be created in the Online Invoice portal. After sign-up we walk you through it with screenshots, and it usually takes 3-4 minutes.",
   },
   {
     question: "I'm a VAT-exempt sole proprietor. Is it right for me too?",
-    answer: "Yes. You can set your VAT exemption and the required text is added to every invoice automatically. If you cross the threshold, Billcircle warns you and helps you switch to invoicing with VAT.",
+    answer: "Yes. You can set your VAT exemption and the required text is added to every invoice automatically. If you cross the threshold, Billbox warns you and helps you switch to invoicing with VAT.",
   },
   {
     question: "Can I move over from another invoicing program?",
@@ -51,8 +51,8 @@ export const FAQ: React.FC = () => {
           </h2>
           <p className="lead">
             If you can't find what you're looking for, email us at{' '}
-            <a href="mailto:hello@billcircle.com" style={{ color: 'var(--accent)', fontWeight: 600 }}>
-              hello@billcircle.com
+            <a href="mailto:hello@billbox.com" style={{ color: 'var(--accent)', fontWeight: 600 }}>
+              hello@billbox.com
             </a>
             . On business days we reply within 15 minutes.
           </p>

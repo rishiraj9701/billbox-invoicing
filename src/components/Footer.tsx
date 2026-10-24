@@ -7,9 +7,8 @@ export const Footer: React.FC = () => {
         <div className="foot">
           <div>
             <a href="#top" className="brand">
-              <svg className="brand-mark"><use href="#logo" /></svg>Billcircle
+              <svg className="brand-mark"><use href="#logo" /></svg>Billbox
             </a>
-            <p>Online invoicing for small businesses. Built in Budapest since 2019.</p>
           </div>
           <div>
             <h4>Product</h4>
@@ -26,7 +25,7 @@ export const Footer: React.FC = () => {
               <li><a href="#gyik">FAQ</a></li>
               <li><a href="#">Tax authority setup guide</a></li>
               <li><a href="#">Migration</a></li>
-              <li><a href="mailto:hello@billcircle.com">Contact</a></li>
+              <li><a href="mailto:hello@billbox.com">Contact</a></li>
             </ul>
           </div>
           <div>
@@ -40,11 +39,20 @@ export const Footer: React.FC = () => {
           </div>
         </div>
         <div className="foot-bar">
-          <span>© 2026 Billcircle. All rights reserved.</span>
-          <span className="nav-ok"><i></i>Tax authority connection: all systems operational</span>
+          <span>© 2026 Billbox. All rights reserved.</span>
+          <span className="foot-credit">
+            Designed &amp; Developed by{' '}
+            <a
+              href="https://rishirajshukla.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Rishi Raj Shukla
+            </a>
+          </span>
         </div>
       </div>
-      <div className="wordmark" aria-hidden="true">Billcircle</div>
+      <div className="wordmark" aria-hidden="true">Billbox</div>
     </footer>
   );
 };

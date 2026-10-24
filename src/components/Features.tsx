@@ -10,7 +10,7 @@ export const Features: React.FC = () => {
             Everything invoicing needs. <span className="dim">And nothing it doesn't.</span>
           </h2>
           <p className="lead">
-            We built Billcircle for small businesses: it does as much as you need, and you don't need an accounting degree to use it.
+            We built Billbox for small businesses: it does as much as you need, and you don't need an accounting degree to use it.
           </p>
         </div>
 
@@ -190,7 +190,7 @@ export const Features: React.FC = () => {
               <div className="pflow">
                 <span className="pf"><svg><use href="#i-cart" /></svg>Web shop order</span>
                 <span className="arrow"><svg><use href="#i-arrow" /></svg></span>
-                <span className="pf hl"><svg className="brand-mark"><use href="#logo" /></svg>Billcircle</span>
+                <span className="pf hl"><svg className="brand-mark"><use href="#logo" /></svg>Billbox</span>
                 <span className="arrow"><svg><use href="#i-arrow" /></svg></span>
                 <span className="pf"><svg><use href="#i-mail" /></svg>Invoice to the customer</span>
               </div>

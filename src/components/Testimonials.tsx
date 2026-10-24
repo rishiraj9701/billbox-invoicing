@@ -28,7 +28,7 @@ export const Testimonials: React.FC = () => {
               </figcaption>
             </figure>
             <figure className="tm dark">
-              <blockquote>“I have twenty-four clients in Billcircle. <strong>I've never had such a clean export from any invoicing tool.</strong>”</blockquote>
+              <blockquote>“I have twenty-four clients in Billbox. <strong>I've never had such a clean export from any invoicing tool.</strong>”</blockquote>
               <figcaption>
                 <span className="av" style={{ '--c': '#7C5A3A' } as React.CSSProperties}>ET</span>
                 <div><b>Esther Toth</b><small>Certified accountant</small></div>
@@ -58,7 +58,7 @@ export const Testimonials: React.FC = () => {
               </figcaption>
             </figure>
             <figure className="tm dark" aria-hidden="true">
-              <blockquote>“I have twenty-four clients in Billcircle. <strong>I've never had such a clean export from any invoicing tool.</strong>”</blockquote>
+              <blockquote>“I have twenty-four clients in Billbox. <strong>I've never had such a clean export from any invoicing tool.</strong>”</blockquote>
               <figcaption>
                 <span className="av" style={{ '--c': '#7C5A3A' } as React.CSSProperties}>ET</span>
                 <div><b>Esther Toth</b><small>Certified accountant</small></div>
@@ -76,7 +76,7 @@ export const Testimonials: React.FC = () => {
           {/* Column 2 (Scrolls Down / Reverse) */}
           <div className="tm-col rev">
             <figure className="tm">
-              <blockquote>“The tax authority once rejected an invoice because I mistyped the tax ID. <strong>Billcircle told me within 10 seconds and showed me the mistake.</strong>”</blockquote>
+              <blockquote>“The tax authority once rejected an invoice because I mistyped the tax ID. <strong>Billbox told me within 10 seconds and showed me the mistake.</strong>”</blockquote>
               <figcaption>
                 <span className="av" style={{ '--c': '#52525B' } as React.CSSProperties}>GS</span>
                 <div><b>Gregory Szabo</b><small>Summit Builders Inc.</small></div>
@@ -106,7 +106,7 @@ export const Testimonials: React.FC = () => {
 
             {/* Loop duplicate */}
             <figure className="tm" aria-hidden="true">
-              <blockquote>“The tax authority once rejected an invoice because I mistyped the tax ID. <strong>Billcircle told me within 10 seconds and showed me the mistake.</strong>”</blockquote>
+              <blockquote>“The tax authority once rejected an invoice because I mistyped the tax ID. <strong>Billbox told me within 10 seconds and showed me the mistake.</strong>”</blockquote>
               <figcaption>
                 <span className="av" style={{ '--c': '#52525B' } as React.CSSProperties}>GS</span>
                 <div><b>Gregory Szabo</b><small>Summit Builders Inc.</small></div>

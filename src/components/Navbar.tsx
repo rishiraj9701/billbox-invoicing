@@ -18,8 +18,8 @@ export const Navbar: React.FC = () => {
   return (
     <>
       <header className={`nav ${scrolled ? 'scrolled' : ''}`} id="nav">
-        <a href="#top" className="brand" aria-label="Billcircle - home">
-          <svg className="brand-mark"><use href="#logo" /></svg>Billcircle
+        <a href="#top" className="brand" aria-label="Billbox - home">
+          <svg className="brand-mark"><use href="#logo" /></svg>Billbox
         </a>
         <nav className="nav-links" aria-label="Main navigation">
           <a href="#funkciok">Features</a>

@@ -12,7 +12,7 @@ export const Statement: React.FC = () => {
       <div className="sec wrap" style={{ position: 'relative', zIndex: 1 }}>
         <span className="kicker" id="stmt">Why we built this</span>
         <p className="fill-text">
-          You didn't become an entrepreneur to do invoicing. That's why Billcircle asks for ten minutes a month at most and gives the rest of the time back to your work.
+          You didn't become an entrepreneur to do invoicing. That's why Billbox asks for ten minutes a month at most and gives the rest of the time back to your work.
         </p>
 
         <div className="stats" data-reveal>

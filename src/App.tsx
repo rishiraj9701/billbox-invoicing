@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
+import type { SplitTextInstance } from './vite-env';
 
 import { SvgSprite } from './components/SvgSprite';
 import { Navbar } from './components/Navbar';
@@ -19,7 +20,7 @@ import { Footer } from './components/Footer';
 export const App: React.FC = () => {
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const SplitText = (window as any).SplitText;
+    const SplitText = window.SplitText;
 
     if (SplitText) {
       gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -47,14 +48,18 @@ export const App: React.FC = () => {
       if (!target) return;
       const href = target.getAttribute('href');
       if (href && href.startsWith('#') && href.length > 1) {
-        const dest = document.querySelector(href);
-        if (dest) {
-          e.preventDefault();
-          if (lenis) {
-            lenis.scrollTo(dest as HTMLElement, { offset: -90, duration: 1.2 });
-          } else {
-            dest.scrollIntoView({ behavior: 'smooth' });
+        try {
+          const dest = document.querySelector(href);
+          if (dest) {
+            e.preventDefault();
+            if (lenis) {
+              lenis.scrollTo(dest as HTMLElement, { offset: -90, duration: 1.2 });
+            } else {
+              dest.scrollIntoView({ behavior: 'smooth' });
+            }
           }
+        } catch {
+          // Ignore invalid selector
         }
       }
     };
@@ -65,7 +70,7 @@ export const App: React.FC = () => {
 
     const ctx = gsap.context(() => {
       if (reduce) {
-        document.querySelectorAll('.fill-text').forEach((el: any) => {
+        document.querySelectorAll<HTMLElement>('.fill-text').forEach((el) => {
           el.style.color = '#fff';
         });
         return;
@@ -77,9 +82,9 @@ export const App: React.FC = () => {
           type: 'words,lines',
           mask: 'lines',
           autoSplit: true,
-          onSplit(self: any) {
+          onSplit(self: SplitTextInstance) {
             return gsap.fromTo(
-              self.words,
+              self.words || [],
               { yPercent: 110, rotateX: -40, opacity: 0, transformOrigin: '50% 100%' },
               {
                 yPercent: 0,
@@ -144,9 +149,9 @@ export const App: React.FC = () => {
             type: 'lines',
             mask: 'lines',
             autoSplit: true,
-            onSplit(self: any) {
+            onSplit(self: SplitTextInstance) {
               return gsap.fromTo(
-                self.lines,
+                self.lines || [],
                 { yPercent: 100, opacity: 0 },
                 {
                   yPercent: 0,
@@ -200,9 +205,9 @@ export const App: React.FC = () => {
             type: 'lines',
             linesClass: 'line',
             autoSplit: true,
-            onSplit(self: any) {
+            onSplit(self: SplitTextInstance) {
               return gsap.timeline().add(
-                self.lines.map((l: any) =>
+                (self.lines || []).map((l) =>
                   gsap.to(l, {
                     backgroundPosition: '0% 0',
                     ease: 'none',

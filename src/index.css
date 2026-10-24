@@ -2717,15 +2717,32 @@ footer {
   gap: 10px;
 }
 
-.foot a {
+.foot ul a {
   font-size: 15px;
   color: var(--ink-2);
   background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
   transition: background-size .35s var(--ease);
 }
 
-.foot a:hover {
+.foot ul a:hover {
   background-size: 100% 1px;
+}
+
+.foot .brand,
+.foot a.brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  background: none !important;
+  text-decoration: none !important;
+  transition: none !important;
+}
+
+.foot .brand:hover,
+.foot a.brand:hover {
+  background: none !important;
+  text-decoration: none !important;
+  color: var(--ink) !important;
 }
 
 .foot-bar {
@@ -2752,6 +2769,31 @@ footer {
   border-radius: 50%;
   background: var(--accent-bright);
   box-shadow: 0 0 0 3px rgb(25 184 100 / .2);
+}
+
+.foot-credit {
+  font-size: 13.5px;
+  color: var(--ink-3);
+}
+
+.foot-credit a {
+  color: var(--ink-2);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+  transition: color .2s var(--ease), text-decoration-color .2s var(--ease);
+}
+
+.foot-credit a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+.foot-credit a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .wordmark {

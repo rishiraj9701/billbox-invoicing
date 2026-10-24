@@ -83,7 +83,7 @@ export const HowItWorks: React.FC = () => {
             <div>
               <span className="step-n">03 / MONITOR</span>
               <h3>We watch for the money to arrive.</h3>
-              <p>Billcircle matches transfers, sends reminders to late payers and tells you when everything is fine. Meanwhile you can work on the next job.</p>
+              <p>Billbox matches transfers, sends reminders to late payers and tells you when everything is fine. Meanwhile you can work on the next job.</p>
               <ul className="checks">
                 <li><svg><use href="#i-check-c" /></svg>Push notification for every payment</li>
                 <li><svg><use href="#i-check-c" /></svg>Monthly summary for your accountant, automatically</li>

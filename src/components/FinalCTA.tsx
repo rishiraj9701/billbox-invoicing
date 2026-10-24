@@ -21,7 +21,7 @@ export const FinalCTA: React.FC = () => {
           <a href="#arak" className="btn btn-accent">
             Create a free account <svg><use href="#i-arrow" /></svg>
           </a>
-          <a href="mailto:hello@billcircle.com" className="btn btn-light">
+          <a href="mailto:hello@billbox.com" className="btn btn-light">
             I'd like to talk to someone
           </a>
         </div>
