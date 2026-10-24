@@ -55,8 +55,8 @@ This repository contains the standalone, production-ready frontend client crafte
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/billcircle-invoicing.git
-cd billcircle-invoicing
+git clone https://github.com/<your-username>/billbox-invoicing.git
+cd billbox-invoicing
 ```
 
 ### 2. Install dependencies
@@ -97,8 +97,7 @@ The application will launch automatically at `http://localhost:5174/`.
 ├── vercel.json                   # Vercel deployment configuration & SPA routing
 ├── vite.config.ts                # Vite dev server and React plugin setup
 ├── public/
-│   ├── _redirects                # Static host SPA redirect fallback
-│   └── screenshots/              # Project reference assets
+│   └── _redirects                # Static host SPA redirect fallback
 └── src/
     ├── App.tsx                   # Master layout, GSAP context & Lenis scroll lifecycle
     ├── index.css                 # Core CSS design tokens, glows, and responsive styles
