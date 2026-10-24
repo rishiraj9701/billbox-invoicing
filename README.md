@@ -48,13 +48,6 @@ This repository contains the standalone, production-ready frontend client crafte
 
 ---
 
-## 4. Screenshots
-
-| Desktop View (1440 × 900) | Mobile View (390 × 844) |
-| :---: | :---: |
-| ![Billcircle Desktop Preview](./full-desktop.jpg) | ![Billcircle Mobile Preview](./full-mobile.jpg) |
-
----
 
 ## 5. Live Demo & Localhost URLs
 
